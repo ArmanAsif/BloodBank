@@ -1,0 +1,392 @@
+:root {
+  --primary-color: #970505;
+  --secondary-color: #005214;
+  --third-color: #ffe4e4;
+  --fourth-color: #f0f0f0;
+  --fifth-color: #ffacac;
+  --sixth-color: #ffffff;
+  --eight-color: #ffffff;
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+/*------------------------------------- Form -----------------------------*/
+.form {
+  max-width: 25rem;
+  padding: 1.2rem;
+}
+.form h3 {
+  letter-spacing: 0.2rem;
+  margin-bottom: 1rem;
+  font-weight: 500;
+}
+.formLabelSize {
+  font-size: 0.8rem;
+}
+.formMain input {
+  width: 100%;
+  padding: 10px;
+  margin: 0.5rem 0;
+  box-sizing: border-box;
+  border: none;
+  outline: none;
+  background: var(--third-color);
+  border-radius: 0.5rem;
+}
+.submitButton {
+  color: var(--sixth-color);
+  border: none;
+  background: var(--primary-color);
+  display: inline-block;
+  padding: 0.2rem 1rem;
+  text-decoration: none;
+  font-size: 0.8rem;
+  border-radius: 1rem;
+  cursor: pointer;
+}
+.greenColor {
+  font-size: 0.7rem;
+  padding: 0.2rem 0.8rem;
+  background: var(--secondary-color);
+}
+.formFooter {
+  display: flex;
+  margin-top: 1rem;
+}
+.formFooter p {
+  letter-spacing: 0.2rem;
+  font-size: 0.8rem;
+  margin-right: 0.5rem;
+}
+.formFooterLink {
+  color: var(--primary-color);
+  display: inline-block;
+  text-decoration: none;
+  font-size: 0.8rem;
+}
+
+
+/*------------------------------------- Side Bar -----------------------------*/
+.sidebar {
+  min-width: 24%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  text-align: center;
+}
+.sidebar img {
+  max-width: 6rem;
+  border-radius: 50%;
+}
+.sidebar h2 {
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  margin-bottom: 0.1rem;
+  font-weight: 600;
+  color: var(--secondary-color);
+}
+.sidebar p {
+  font-size: 0.75rem;
+}
+.sidebarLink {
+  color: Var(--secondary-color);
+  display: block;
+  margin: 0.25rem auto;
+  text-decoration: none;
+  font-size: 1.2rem;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+.sidebarLink:hover {
+  color: var(--primary-color);
+}
+.sidebarLinkLogout {
+  color: var(--secondary-color);
+  border: none;
+  background: var(--eight-color);
+  font-size: 1.2rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+.sidebarLinkLogout:hover {
+  color: var(--primary-color);
+}
+.faRedColor {
+  color: var(--primary-color);
+  margin-right: 0.6rem;
+}
+.sidebarFooter p {
+  margin-bottom: 1rem;
+}
+.sidebarFooter h1 {
+  color: var(--primary-color);
+}
+.faIconSize {
+  font-size: 1.3rem;
+  margin-right: 1rem;
+}
+
+/*------------------------------------- Card -----------------------------*/
+.card {
+  background: var(--sixth-color);
+  width: 12rem;
+  height: 15rem;
+  margin: 0.3rem;
+  border-radius: 1rem;
+}
+.cardTop {
+  width: 100%;
+  height: 45%;
+  font-size: 5rem;
+  text-align: center;
+  color: var(--fifth-color);
+}
+.cardBottom {
+  text-align: center;
+  width: 100%;
+  height: 55%;
+}
+.cardBottom p {
+  margin: 0.15rem;
+  font-size: 0.9rem;
+}
+.cardButton {
+  color: var(--sixth-color);
+  border: none;
+  background: var(--secondary-color);
+  display: inline-block;
+  padding: 0.15rem 1.2rem;
+  text-decoration: none;
+  font-size: 0.7rem;
+  border-radius: 0.7rem;
+  cursor: pointer;
+  margin-top: 0.5rem;
+  outline: none;
+}
+.redColor {
+  background: var(--primary-color);
+}
+.faGreenColor {
+  color: var(--secondary-color);
+  margin-right: 0.3rem;
+}
+.faNotReview {
+  color: var(--primary-color);
+  margin-right: 0.3rem;
+}
+
+
+/*------------------------------------- Paginate -----------------------------*/
+.paginate {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+.paginateButton {
+  width: 25%;
+  height: 40px;
+  list-style: none;
+  display: flex;
+  justify-content: center;
+}
+.paginateButton a {
+  padding: 0 0.5rem;
+  cursor: pointer;
+  border-radius: 1.5rem;
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: var(--primary-color);
+}
+.paginateButton a:hover {
+  color: var(--secondary-color);
+}
+.paginateActive a {
+  color: var(--secondary-color);
+  border: 0.3rem solid var(--secondary-color);
+}
+.paginateDisabled a {
+  color: var(--fifth-color);
+}
+@media (max-width: 700px) {
+  .paginate {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+  }
+}
+
+/*------------------------------------- Profile Screen -----------------------------*/
+/*------------------------------------- Check Screen -----------------------------*/
+/*------------------------------------- Post Check Screen -----------------------------*/
+/*------------------------------------- Home Screen -----------------------------*/
+.main {
+  display: flex;
+}
+.container {
+  height: 100vh;
+  width: 100%;
+  background: var(--fourth-color);
+  border-top-left-radius: 1.5rem;
+  border-bottom-left-radius: 1.5rem;
+  padding: 3rem 6rem;
+  position: relative;
+}
+.container h2 {
+  text-align: center;
+  margin-bottom: 3rem;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 1.2rem;
+}
+.cardContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+@media (max-width: 700px) {
+  .main {
+    flex-direction: column;
+  }
+  .container {
+    height: 100%;
+    position: relative;
+    border-top-left-radius: 0rem;
+    border-bottom-left-radius: 0rem;
+  }
+  .container h2 {
+    font-size: 1rem;
+  }
+  .cardContainer {
+    justify-content: center;
+  }
+}
+
+/*------------------------------------- Request Screen -----------------------------*/
+.post {
+  padding: 5rem 15rem;
+}
+@media (max-width: 700px) {
+  .post {
+    padding: 2rem;
+  }
+}
+
+/*------------------------------------- Review Screen -----------------------------*/
+.review {
+  padding: 4rem 8rem;
+  display: flex;
+  justify-content: space-between;
+}
+textarea {
+  resize: none;
+}
+.formMain textarea {
+  width: 100%;
+  padding: 10px;
+  margin: 0.5rem 0;
+  box-sizing: border-box;
+  border: none;
+  outline: none;
+  background: var(--third-color);
+  border-radius: 0.5rem;
+}
+@media (max-width: 700px) {
+  .review {
+    flex-direction: column;
+    padding: 1rem 2rem;
+  }
+}
+
+/*------------------------------------- Email Screen -----------------------------*/
+.email {
+  text-align: center;
+  margin-bottom: 2.5rem;
+}
+.email h2 {
+  margin-bottom: 0;
+}
+
+/*------------------------------------- Login Screen -----------------------------*/
+.signin {
+  display: flex;
+  width: 70%;
+  margin: 10rem auto;
+}
+.signin h1 {
+  max-width: 25rem;
+  padding: 1.2rem;
+}
+@media (max-width: 700px) {
+  .signin {
+    flex-direction: column;
+  }
+}
+
+/*------------------------------------- Register Screen -----------------------------*/
+.signup {
+  display: flex;
+  width: 70%;
+  margin: 3rem auto;
+}
+.signup h1 {
+  max-width: 25rem;
+  padding: 1.2rem;
+}
+.signup img {
+  margin-top: 2rem;
+  max-width: 20rem;
+}
+@media (max-width: 700px) {
+  .signup {
+    flex-direction: column;
+  }
+  .signup img {
+    max-width: 10rem;
+  }
+}
+
+/*------------------------------------- Welcome Screen -----------------------------*/
+.welcome {
+  width: 100%;
+  height: 100%;
+  text-align: center;
+}
+.welcomeHeader {
+  margin-top: 12rem;
+  margin-bottom: 3rem;
+}
+.welcomeHeader h1 {
+  letter-spacing: 0.3rem;
+}
+.welcomeHeader p {
+  margin-top: 0.5rem;
+  letter-spacing: 3px;
+}
+.welcomeLink {
+  color: var(--sixth-color);
+  background-color: var(--primary-color);
+  display: inline-block;
+  padding: 0.2rem 2rem;
+  text-decoration: none;
+  font-size: 1.8rem;
+  border-radius: 2rem;
+}
+@media (max-width: 700px) {
+  .welcomeHeader h1 {
+    font-size: 1.5rem;
+  }
+  .welcomeHeader p {
+    font-size: 0.8rem;
+  }
+}
+
+
+
+
